@@ -33,7 +33,7 @@ body{
 }
 
 .botones a:focus{
-    background-color: rgb(110, 50, 194);
+    background-color: rgb(50, 194, 194);
 }
 
 .greetings{
@@ -41,12 +41,12 @@ body{
     font-weight: 900;
 }
 .greetings > span{
-    animation: glow 1.5s ease-in-out infinite;
+    animation: glow 2.5s ease-in-out infinite;
 }
 @keyframes glow{
     0%, 100%{
         color: #fff;
-        text-shadow: 0 0 12px #c939d6, 0 0 50px #d139d6, 0 0 100px #c439d6;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
     }
     10%, 90%{
         color: #111;
@@ -57,49 +57,27 @@ body{
     animation-delay: .2s ;
 }
 .greetings > span:nth-child(3){
-    animation-delay: .3s ;
+    animation-delay: .4s ;
 }
 .greetings > span:nth-child(4){
-    animation-delay: .4s;
-}
-.greetings > span:nth-child(5){
-    animation-delay: .5s;
-}
-.greetings > span:nth-child(6){
     animation-delay: .6s;
 }
-.greetings > span:nth-child(7){
-    animation-delay: .7s;
-}
-.greetings > span:nth-child(8){
+.greetings > span:nth-child(5){
     animation-delay: .8s;
 }
-.greetings > span:nth-child(9){
-    animation-delay: .9s;
-}
-.greetings > span:nth-child(10){
+.greetings > span:nth-child(6){
     animation-delay: 1s;
 }
 
 .description{
     font-size: 1.5rem;
     margin-bottom: 20px;
-    font-weight: bold;
-    color: rgb(146, 69, 223);
-    text-align: center;
 }
 
 .button a{
     text-decoration: none;
     font-size: 1rem;
     color: #111;
-}
-.botones{
-    background-color: rgb(140, 87, 193);
-}
-
-.botones:hover{
-    background-color: rgb(102, 28, 176);
 }
 
 @media screen and (max-width:574px){
