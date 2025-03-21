@@ -20,19 +20,6 @@ body {
   perspective: 1000px;
 }
 
-.spoken {
-  font-size: 2.2rem;
-  display: block; /* Permitir que el elemento se comporte como un bloque */
-  margin-bottom: 10px; /* Espacio entre 'Santiago' y el resto del texto */
-  font-weight:  900;
-  color: #ffffff;
-  transform: translateY(-10px); /* Ajusta el valor según sea necesario */
-  text-shadow: 0 0 10px #000000, 0 0 20px #000000,0 0 30px #000000;
-}
-#lyrics p{
-  font-size: 1.5rem;
-  text-shadow: 0 0 10px #000000, 0 0 20px #000000,0 0 30px #000000;
-}
 #lyrics {
   font-size: 28px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -42,9 +29,6 @@ body {
   z-index: 1;
   font-weight: bold;
   letter-spacing: 4px;
-  padding: 40px;
-  text-align: center;
-  max-width: 70%;
 }
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
@@ -58,16 +42,13 @@ body {
 .titulo {
   margin-bottom: 180px;
   font-family: "Arial Narrow", Arial, sans-serif;
-  color: rgb(206, 114, 255);
+  color: yellow;
   position: absolute;
-  font-weight: 900;
+  font-weight: bold;
   letter-spacing: 10px;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
-  z-index: 10;
-  text-shadow: 0 0 10px #000000, 0 0 20px #000000,0 0 30px #000000;
-
 }
 @keyframes fadeIn {
   from {
@@ -118,7 +99,7 @@ body {
       transparent 19px,
       transparent 22px
     ),
-    linear-gradient(90deg, rgb(0, 213, 255), rgb(240, 240, 240));
+    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
 }
 
 .flowers {
@@ -257,7 +238,7 @@ body {
   transform: translate(-50%, -100%);
   width: 8vmin;
   height: 8vmin;
-  background-color: #fd25f2;
+  background-color: #f9fd25;
   /* background-color: #fd2525; */
   filter: blur(10vmin);
 }
@@ -268,8 +249,8 @@ body {
   width: 8vmin;
   height: 11vmin;
   border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
-  /* background-color: #fd2525; */
-  background-color: #aa4af8;
+  background-color: #253bfd;
+  background-color: #fddd25;
   transform-origin: bottom center;
   opacity: 0.9;
   box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
@@ -289,7 +270,7 @@ body {
   transform-origin: bottom left;
   border-radius: 4vmin 10vmin 4vmin 4vmin;
   transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
-  background-color: #41017c;
+  background-color: #7c6901;
   z-index: 1;
   opacity: 0.8;
 }
@@ -300,7 +281,7 @@ body {
   width: 9vmin;
   height: 4vmin;
   border-radius: 50%;
-  background-color: #6c11d3;
+  background-color: #fff;
 }
 .flower__white-circle::after {
   content: "";
@@ -416,7 +397,7 @@ body {
       transparent 1px,
       transparent 12px
     ),
-    linear-gradient(90deg, rgb(255, 148, 248), rgb(255, 0, 162));
+    linear-gradient(90deg, rgb(255, 235, 18), rgb(255, 206, 0));
 }
 .flower__line {
   height: 55vmin;
@@ -481,14 +462,14 @@ body {
   bottom: 0vmin;
   width: 1vmin;
   height: 1vmin;
-  background-color: rgb(225, 0, 255);
+  background-color: rgb(255, 251, 0);
   border-radius: 50%;
   filter: blur(0.2vmin);
   -webkit-animation: light-ans 4s linear infinite backwards;
   animation: light-ans 4s linear infinite backwards;
 }
 .flower__light:nth-child(odd) {
-  background-color: #c36eff;
+  background-color: #23f0ff;
 }
 .flower__light--1 {
   left: -2vmin;
@@ -758,7 +739,7 @@ body {
 .flower__g-long {
   --w: 2vmin;
   --h: 6vmin;
-  --c: #15aa49;
+  --c: #159faa;
   position: absolute;
   bottom: 10vmin;
   left: -3vmin;
